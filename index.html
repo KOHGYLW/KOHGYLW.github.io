@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>kiftd 一款开源、完善、便捷的个人网盘系统</title>
+		<link rel="icon" type="image/x-icon" href="img/icon.png" />
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/carousel.css" />
+		<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+		<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+		<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+		<style>
+			.banner {
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			
+			.panel {
+				background-color: rgba(26, 5, 88, 0.5);
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">kiftd——青阳网络文文件传输系统</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<p class="navbar-text">一款面向个人、团队、小型组织的个人网盘应用</p>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active">
+							<p class="navbar-text">快速访问：</p>
+						</li>
+						<li>
+							<a href="https://github.com/KOHGYLW/kiftd">GitHub</a>
+						</li>
+						<li>
+							<a href='https://gitee.com/kohgylw/kiftd'>
+								<img height="20" src='https://gitee.com/kohgylw/kiftd/widgets/widget_5.svg' alt='Fork me on Gitee'></img>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Carousel
+    ================================================== -->
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div style='background-image: url(img/c1.png);' class="item active banner">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="panel panel-primary">
+								<div class="panel-body">
+									<h1>立即搭建属于个人、家庭或团队的网盘</h1>
+									<p>无论是安装在随身携带的笔记本电脑上替代老旧的U盘，还是使用团队服务器搭建局域网文件共享平台，kiftd都能游刃有余。</p>
+									<p>
+										<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style='background-image: url(img/c10.png);' class="item banner">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="panel panel-primary">
+								<div class="panel-body">
+									<h1>专业、完善的特色功能</h1>
+									<p>您在寻找的功能：视频在线播放、PDF预览、图片批量查看、音乐循环播放、文件夹访问控制……这些，对kiftd来说都是标配。</p>
+									<p>
+										<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style='background-image: url(img/c2.png);' class="item banner">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<h1>网盘领域的“无障碍设施”</h1>
+									<p>无需再让访问者们去安装客户端或Flash支持，也不需要任何额外插件。打开浏览器，开始使用全部功能。</p>
+									<p>
+										<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style='background-image: url(img/c3.png);' class="item banner">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<h1>无任何使用成本和限制</h1>
+									<p>kiftd完全出于兴趣开发，免费且无任何使用限制。简单来说它下载之后完全属于您，可以随意应用于何种领域和目的。</p>
+									<p>
+										<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style='background-image: url(img/c4.png);' class="item banner">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<h1>爱护用户设备，从开源做起</h1>
+									<p>担心代码中隐藏着不可告人的秘密？担心捆绑全家桶？您可以自由下载kiftd的源代码，并随意编译它。</p>
+									<p>
+										<a class="btn btn-lg btn-primary" href="https://github.com/KOHGYLW/kiftd-source" role="button">获取源代码</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<a class="left carousel-control" style="background-color: rgba(255,255,255,0);opacity:0" href="#myCarousel" role="button" data-slide="prev"></a>
+			<a style="background-color: rgba(255,255,255,0);opacity:0;" class="right carousel-control" href="#myCarousel" role="button" data-slide="next"></a>
+		</div>
+		<!-- /.carousel -->
+
+		<!-- Marketing messaging and featurettes
+    ================================================== -->
+		<!-- Wrap the rest of the page in another container to center all the content. -->
+
+		<div class="container marketing">
+
+			<!-- Three columns of text below the carousel -->
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="img-circle" src="img/skydriver.png" width="140">
+					<h2>“无限”传输</h2>
+					<p>无论是不足1MB的文档还是超过5GB的高清视频，均可自由上传和下载。支持批量上传、拖拽上传和打包下载。</p>
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<img class="img-circle" src="img/windows.png" width="90">
+					<h2>真正跨平台</h2>
+					<p>Windows？Linux？Mac？kiftd不通过开发不同的版本实现跨平台。一个版本，3大舞台，这才是真正的跨平台。</p>
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<img class="img-circle" src="img/download.png" width="90">
+					<h2>快速开始</h2>
+					<p>有一种安装叫“解压即用”，忘掉注册表和各种冗杂的配置过程吧。有一种卸载叫“删除即走”，绝不和你卖萌。</p>
+				</div>
+				<!-- /.col-lg-4 -->
+			</div>
+			<!-- /.row -->
+
+			<!-- START THE FEATURETTES -->
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">3分钟快速开始</h2>
+					<p class="lead">
+						让小白用户完成一个完整的网盘系统部署工作需要多久？对于kiftd来说，设计耗时为3分钟。您只需通根据程序附带的“kiftd说明文档”来完成安装。它图文并茂，且简单易懂。
+						<a href="https://github.com/KOHGYLW/kiftd#quick-strat">快速开始……</a>
+					</p>
+				</div>
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive center-block" src="img/c8.png" alt="Generic placeholder image">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7 col-md-push-5">
+					<h2 class="featurette-heading">想要眼见为实？</h2>
+					<p class="lead">担心下载后不能满足您的需求？kiftd特意为您准备了一些简单的演示图片，虽然它们不能展示出kiftd的全部特色，但可以帮您快速了解它的面貌。<a href="https://github.com/KOHGYLW/kiftd#%E5%8A%9F%E8%83%BD%E9%80%9F%E8%A7%88">功能速览……</a></p>
+				</div>
+				<div class="col-md-5 col-md-pull-7">
+					<img class="featurette-image img-responsive center-block" src="img/c14.png" alt="Generic placeholder image">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">需要联系作者？</h2>
+					<p class="lead">无论您是在安装和使用过程中遇到了尴尬的局面还是想对kiftd的功能提出建议，均可直接联系作者 kohgylw@163.com ，您的反馈是kiftd继续发展下去的唯一动力，每一份反馈均会得到答复。答复或许会迟到，但肯定不会缺席。<a href="mailto:kohgylw@163.com">kohgylw@163.com</a></p>
+				</div>
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive center-block" src="img/c17.png" alt="Generic placeholder image">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<!-- /END THE FEATURETTES -->
+
+			<!-- FOOTER -->
+			<footer>
+				<p class="pull-right">
+					<a href="#">返回顶部</a>
+				</p>
+				<p>&copy; 2018 kohgylw@163.com, 青阳龙野 版权所有。
+				</p>
+
+		</div>
+		<!-- /.container -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="downloadModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">下载位置</h4>
+					</div>
+					<div class="modal-body">
+						<div class="list-group">
+							<a href="https://github.com/KOHGYLW/kiftd/archive/master.zip" class="list-group-item">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-save"></span> GitHub</h4>
+								<p class="list-group-item-text">GitHub是知名的开源项目托管平台，可以直接进行下载。</p>
+							</a>
+							<a href="https://gitee.com/kohgylw/kiftd/repository/archive/master.zip" class="list-group-item">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-save"></span> Gitee</h4>
+								<p class="list-group-item-text">“码云”是国内知名的开源项目托管平台，方便国内用户访问。需登录认证。</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/holder.min.js"></script>
+	<script type="text/javascript" src="js/jqthumb.min.js"></script>
+	<script>
+	</script>
+
+</html>
