@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="kiftd下载,kiftd官方网站">
+		<meta name="baidu-site-verification" content="wM6UlfaFy9" />
+		<!-- 上述4个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>kiftd的最新讯息...</title>
+		<link rel="icon" type="image/x-icon" href="img/icon.png" />
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/carousel.css" />
+		<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+		<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+		<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script>
+      	alert("提示：浏览器版本过低。请使用一款现代浏览器访问（例如Chrome或FireFox等），如使用国产高速浏览器，请切换为“极速模式”。");
+      </script>
+    <![endif]-->
+		<style>
+			.banner {
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			
+			.panel {
+				background-color: rgba(26, 5, 88, 0.5);
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">kiftd——青阳网络文件传输系统</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<p class="navbar-text">一款面向个人、团队、小型组织的网盘服务器系统</p>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active">
+							<p class="navbar-text">快速访问：</p>
+						</li>
+						<li>
+							<a href="https://github.com/KOHGYLW/kiftd">GitHub</a>
+						</li>
+						<li>
+							<a href='https://gitee.com/kohgylw/kiftd'>
+								<img height="20" src='https://gitee.com/kohgylw/kiftd/widgets/widget_5.svg' alt='Fork me on Gitee'></img>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container marketing">
+
+			<div class="jumbotron" style="background-color: #36648B; color: #FFFFFF;">
+				<h1>最新讯息……</h1>
+				<p>新版本、新功能、新体验。您可以在这里获取最新版本动态。</p>
+			</div>
+
+			<hr class="featurette-divider">
+			
+			<h2>新版本v1.0.8 <span class="badge">New</span></h2>
+			<h4>本次更新增加了一些新功能，同时进一步提高了稳定性，推荐所有用户升级体验。</h4>
+			<ul>
+				<li>修正断点续传存在的问题——经一些使用者反馈，该问题会导致下载速度越来越慢直至降为0。该问题已紧急修复，确保主流下载工具软件能够正确进行多线程下载。</li>
+				<li>图片分页预览——当需要预览超过15张图片时，kiftd能自动将其分页，您可以使用翻页功能查看所有图片。</li>
+				<li>账户配置实时更新——现在，更新账户配置无需要再重启kiftd了。kiftd会在运行中自动加载并更新账户配置文件，只需稍等片刻便会生效。</li>
+				<li>正确识别安装目录——现在，kiftd能够识别自己到底被放置在哪个路径下了，您也可以在任意路径下启动它了（针对命令环境）。</li>
+				<li>查看下载链接——为了进一步方便使用下载工具进行下载，您可以直接在下载提示框中直接查看下载链接了。</li>
+				<li>修正了1MB以下体积文件的显示——它们现在会显示为“&lt;1MB”而不是“0MB”。</li>
+			</ul>
+			<br />
+			
+			<h2>新版本v1.0.7</h2>
+			<h4>本次更新加入了新的功能，并对已有的问题进行修正，推荐所有用户升级体验。</h4>
+			<ul>
+				<li>断点续传！——现在，kiftd的下载功能已经支持断点续传技术了，这意味着您可以随时暂停并继续您的下载。同时，该功能也为多线程下载技术提供了支持，这意味着您还可以借助一些主流下载工具来进一步提高文件的下载速度。</li>
+				<li>允许为一个账户设置多个小组——这一功能是为了方便某些账户能同时访问多个不同小组的文件夹（这在团队使用中尤为必要）。具体内容请见《kiftd说明文档》中的《为账户设置小组》一节。（特别鸣谢：逸轩居士）</li>
+				<li>UI界面优化——进一步优化了界面操作。</li>
+				<li>进一步优化了上传文件操作。</li>
+				<li>修正了在线音乐播放功能在某些时候无法正确显示歌曲名称的BUG。</li>
+				<li>修正了拖拽上传时无法在上传窗口中显示文件名的BUG。</li>
+				<li>进一步完善了“回车”键的功能，使其更加符合多数用户的操作习惯。</li>
+				<li>(临时更新)图片预览优化——现在图片预览能够正确识别使用cmyk格式的图片了，这使得您可以正常预览经过处理的JPGE图像。</li>
+			</ul>
+			<br />
+			
+			<h2>优化更新v1.0.6</h2>
+			<h4>本次更新主要为解决日常使用过程中出现的问题和BUG，推荐所有用户升级。</h4>
+			<ul>
+				<li>修正了IE11浏览器无法上传文件的BUG——现在，您可以使用IE浏览器正常上传文件了（不过无法拖拽上传，该功能依旧需要现代浏览器支持），同时您也可以正常在IE11浏览器中预览图片和播放音乐。注意：即使增加了对IE的兼容性，不过考虑到目前微软已经停止对IE的支持，因此kiftd仍旧推荐您使用一款现代浏览器进行访问和操作。</li>
+				<li>增加了对国产高速浏览器和WebKit插件的支持——现在，当您使用主流国产高速浏览器访问kiftd时，其页面会自动切换至“极速模式”浏览而无需再手动切换。同时，如果您安装了WebKit插件，那么也能获得更好的浏览体验。</li>
+				<li>修复了拖拽上传与普通上传的冲突BUG。</li>
+			</ul>
+			<br />
+			
+			<hr class="featurette-divider">
+
+			<p>想要了解更多kiftd的最新讯息？请访问：
+				<a href="https://github.com/KOHGYLW/kiftd#news">kiftd官方资源站（国际）</a> 或
+				<a href="https://gitee.com/kohgylw/kiftd">kiftd官方资源站（国内）</a>！这里是关于kiftd的实时动态，您可以随时查看并获取最新版本。</p>
+			<hr class="featurette-divider">
+
+			<!-- FOOTER -->
+			<footer>
+				<p class="pull-right">
+					<a href="#">返回顶部</a>
+					<a href="index.html">返回首页</a>
+				</p>
+				<p>&copy; 2018 kohgylw@163.com, 青阳龙野 版权所有。
+				</p>
+
+		</div>
+		<!-- /.container -->
+
+	</body>
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/holder.min.js"></script>
+	<script type="text/javascript" src="js/jqthumb.min.js"></script>
+
+</html>
