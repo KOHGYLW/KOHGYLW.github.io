@@ -76,9 +76,23 @@
 				<li data-target="#myCarousel" data-slide-to="3"></li>
 
 				<li data-target="#myCarousel" data-slide-to="4"></li>
+
+				<li data-target="#myCarousel" data-slide-to="5"></li>
 			</ol>
 			<div class="carousel-inner" role="listbox">
-				<div style='background-image: url(img/c1.png);' class="item active banner">
+				<div style='background-image: linear-gradient(0deg, #5D478B,#5CACEE);' class="item active banner">
+					<div class="container">
+						<div class="carousel-caption">
+							<img src="img/icon-big.png" width="200" alt="KIFTD图标" class="img-rounded">
+							<h1>青阳网络文件传输系统kiftd</h1>
+							<p>一款专门面向个人、团队和小型组织的私有网盘系统。无论是在家庭、学校还是在办公室，您都能立刻开始使用它！</p>
+							<p>
+								<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div style='background-image: url(img/c1.png);' class="item banner">
 					<div class="container">
 						<div class="carousel-caption">
 							<div class="panel panel-primary">
@@ -176,8 +190,8 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<img class="img-circle" src="img/skydriver.png" width="140">
-					<h2>“无限”传输</h2>
-					<p>无论是不足1MB的文档还是超过5GB的高清视频，均可自由上传和下载。支持批量上传、拖拽上传和打包下载。</p>
+					<h2>“专业”功能</h2>
+					<p>kiftd简约不简单。视频播放、图片查看、音乐播放、权限设置、拖拽上传……这些高级功能，对kiftd来说都是标配。</p>
 				</div>
 				<!-- /.col-lg-4 -->
 				<div class="col-lg-4">
@@ -188,17 +202,17 @@
 				<!-- /.col-lg-4 -->
 				<div class="col-lg-4">
 					<img class="img-circle" src="img/download.png" width="90">
-					<h2>快速开始</h2>
-					<p>有一种安装叫“解压即用”，忘掉注册表和各种冗杂的配置过程吧。有一种卸载叫“删除即走”，绝不和你卖萌。</p>
+					<h2>即开即用</h2>
+					<p>有一种安装流程叫“解压即用”，忘掉复杂的配置和注册吧。还有一种卸载叫“删除即走”，绝不和你撒娇卖萌。</p>
 				</div>
 				<!-- /.col-lg-4 -->
 			</div>
 			<!-- /.row -->
-			
+
 			<!-- START THE FEATURETTES -->
 
 			<hr class="featurette-divider">
-			
+
 			<div class="row featurette">
 				<div class="col-md-7">
 					<h2 class="featurette-heading">马上了解什么是kiftd？</h2>
@@ -240,9 +254,9 @@
 					<img class="featurette-image img-responsive center-block" src="img/news.png" alt="Generic placeholder image">
 				</div>
 			</div>
-			
+
 			<hr class="featurette-divider">
-			
+
 			<div class="row featurette">
 				<div class="col-md-7 col-md-push-5">
 					<h2 class="featurette-heading">立即获取源代码？</h2>
@@ -302,5 +316,12 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/holder.min.js"></script>
 	<script type="text/javascript" src="js/jqthumb.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.carousel').carousel({
+				interval: 3500
+			})
+		});
+	</script>
 
 </html>
