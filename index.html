@@ -36,7 +36,7 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="index.html">kiftd——青阳网络文件传输系统</a>
@@ -63,6 +63,18 @@
 				</div>
 			</div>
 		</nav>
+
+		<div class="jumbotron" style='background-image: linear-gradient(0deg, #5D478B,#5CACEE);margin-bottom: 20px;'>
+			<div class="container" style="text-align: center;color: #FFFFFF;">
+				<img src="img/icon-big.png" width="200" alt="KIFTD图标" class="img-rounded">
+				<h2>青阳网络文件传输系统kiftd</h2>
+				<p>一款专门面向个人、团队和小型组织的私有网盘系统。无论是在家庭、学校还是在办公室，您都能立刻开始使用它！</p>
+				<p>
+					<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
+				</p>
+			</div>
+		</div>
+
 		<!-- Carousel
     ================================================== -->
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -77,31 +89,15 @@
 
 				<li data-target="#myCarousel" data-slide-to="4"></li>
 
-				<li data-target="#myCarousel" data-slide-to="5"></li>
 			</ol>
 			<div class="carousel-inner" role="listbox">
-				<div style='background-image: linear-gradient(0deg, #5D478B,#5CACEE);' class="item active banner">
-					<div class="container">
-						<div class="carousel-caption">
-							<img src="img/icon-big.png" width="200" alt="KIFTD图标" class="img-rounded">
-							<h1>青阳网络文件传输系统kiftd</h1>
-							<p>一款专门面向个人、团队和小型组织的私有网盘系统。无论是在家庭、学校还是在办公室，您都能立刻开始使用它！</p>
-							<p>
-								<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div style='background-image: url(img/c1.png);' class="item banner">
+				<div style='background-image: url(img/c1.png);' class="item active banner">
 					<div class="container">
 						<div class="carousel-caption">
 							<div class="panel panel-primary">
 								<div class="panel-body">
 									<h1>上手简单，适合各种场景使用</h1>
-									<p>无论是安装在您随身携带的笔记本电脑上替代老旧的U盘，还是使用团队服务器搭建局域网文件共享平台，kiftd都能游刃有余。</p>
-									<p>
-										<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
-									</p>
+									<p>安装在您随身携带的笔记本电脑上替代老旧的U盘？还是使用团队服务器搭建局域网文件共享平台？kiftd都能游刃有余。</p>
 								</div>
 							</div>
 						</div>
@@ -114,9 +110,6 @@
 								<div class="panel-body">
 									<h1>专业、完善的特色功能</h1>
 									<p>您在寻找的功能：视频在线播放、PDF预览、图片批量查看、音乐循环播放、文件夹访问控制……这些，对kiftd来说都是标配。</p>
-									<p>
-										<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
-									</p>
 								</div>
 							</div>
 						</div>
@@ -129,9 +122,6 @@
 								<div class="panel-body">
 									<h1>网盘领域的“无障碍设施”</h1>
 									<p>无需再让访问者们去下载客户端或Flash，也不需要安装任何额外插件。打开浏览器，开始体验全部功能。</p>
-									<p>
-										<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
-									</p>
 								</div>
 							</div>
 						</div>
@@ -143,10 +133,7 @@
 							<div class="panel panel-default">
 								<div class="panel-body">
 									<h1>无任何使用成本和限制</h1>
-									<p>kiftd完全出于兴趣开发，免费且无任何使用限制。简单来说它下载之后完全属于您，可以随意应用于何种领域和目的。</p>
-									<p>
-										<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
-									</p>
+									<p>kiftd完全出于兴趣开发，免费且无任何使用限制。简单来说它下载之后完全属于您，可以随意应用于何种领域和目的（包括商业目的）。</p>
 								</div>
 							</div>
 						</div>
@@ -316,12 +303,4 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/holder.min.js"></script>
 	<script type="text/javascript" src="js/jqthumb.min.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			window.setTimeout(function(){
-				$('.carousel').carousel('next');
-			},2000);
-		});
-	</script>
-
 </html>
