@@ -71,9 +71,12 @@
 				<h2>青阳网络文件传输系统kiftd</h2>
 				<p>一款专门面向个人、团队和小型组织的私有网盘系统。无论是在家庭、学校还是在办公室，您都能立刻开始使用它！</p>
 				<p>
-					<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载</a>
+					<a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#downloadModal" href="javascript:void(0);" role="button">立即下载 <span class="glyphicon glyphicon-save" aria-hidden="true"></span></a>
 				</p>
 				<br />
+				<p>
+					<a href="#myCarousel" id="showDown" style="color: #FFFFFF;" class="glyphicon glyphicon-menu-down" aria-hidden="true"></a>
+				</p>
 			</div>
 		</div>
 
@@ -305,4 +308,15 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/holder.min.js"></script>
 	<script type="text/javascript" src="js/jqthumb.min.js"></script>
+	<script>
+		//动画移动下拉效果
+		$(function() {
+			$("#showDown").bind("click", function() {
+				$('html,body').animate({
+					scrollTop: ($($(this).attr('href')).offset().top)
+				}, 500);
+			});
+		});
+	</script>
+
 </html>
