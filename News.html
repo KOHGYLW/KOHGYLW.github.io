@@ -64,7 +64,7 @@
 				</div>
 			</div>
 		</nav>
-		
+
 		<div class="jumbotron" style='background-image: linear-gradient(0deg, #5D478B,#5CACEE);'>
 			<div class="container" style="text-align: center;color: #FFFFFF;">
 				<h1>最新讯息</h1>
@@ -73,7 +73,12 @@
 		</div>
 
 		<div class="container marketing">
-			
+
+			<blockquote>
+				<em>提示：当您升级至新版本后，请手动清理浏览器缓存并刷新kiftd主页，以开始体验新功能！<a href="javascript:void(0);" data-toggle="modal" data-target="#cleanPageModal">了解如何清理浏览器缓存...</a></em>
+			</blockquote>
+			<hr />
+
 			<h2>常规更新v1.0.11 <span class="badge">New</span></h2>
 			<h4>本次更新为维护性的更新，修复一些已经发现的问题以优化使用体验，推荐所有用户升级。</h4>
 			<ul>
@@ -84,7 +89,7 @@
 				<li>修复了导出功能在遇到存在与文件同名的文件夹时会产生覆盖的Bug，处理方法同上。</li>
 			</ul>
 			<br />
-			
+
 			<h2>新版本v1.0.10</h2>
 			<h4>本次更新增加了较多用户们一直期待的、实用性较强的新功能，进一步增强kiftd的使用体验。推荐所有用户升级体验。</h4>
 			<ul>
@@ -106,7 +111,7 @@
 				<li>其他一些功能的优化，进一步增强系统稳定性。</li>
 			</ul>
 			<br />
-			
+
 			<h2>新版本v1.0.9</h2>
 			<h4>本次更新增加了一些新功能，方便用户操作。推荐所有用户升级体验。</h4>
 			<ul>
@@ -117,7 +122,7 @@
 				<li>修正了下载文件时特殊符号显示不正确的问题。</li>
 			</ul>
 			<br />
-			
+
 			<h2>新版本v1.0.8</h2>
 			<h4>本次更新增加了一些新功能，同时进一步提高了稳定性，推荐所有用户升级体验。</h4>
 			<ul>
@@ -129,7 +134,7 @@
 				<li>修正了1MB以下体积文件的显示——它们现在会显示为“&lt;1MB”而不是“0MB”。</li>
 			</ul>
 			<br />
-			
+
 			<h2>新版本v1.0.7</h2>
 			<h4>本次更新加入了新的功能，并对已有的问题进行修正，推荐所有用户升级体验。</h4>
 			<ul>
@@ -143,7 +148,7 @@
 				<li>(临时更新)图片预览优化——现在图片预览能够正确识别使用cmyk格式的图片了，这使得您可以正常预览经过处理的JPGE图像。</li>
 			</ul>
 			<br />
-			
+
 			<h2>常规更新v1.0.6</h2>
 			<h4>本次更新主要为解决日常使用过程中出现的问题和BUG，推荐所有用户升级。</h4>
 			<ul>
@@ -152,7 +157,7 @@
 				<li>修复了拖拽上传与普通上传的冲突BUG。</li>
 			</ul>
 			<br />
-			
+
 			<hr class="featurette-divider">
 
 			<p>想要了解更多kiftd的最新讯息？请访问：
@@ -171,6 +176,34 @@
 
 		</div>
 		<!-- /.container -->
+
+		<!--如何清理浏览器缓存-->
+		<div class="modal fade" id="cleanPageModal" tabindex="-1" role="dialog" aria-labelledby="cleanPageModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="cleanPageModalLabel">如何清理浏览器缓存文件？</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							主流浏览器会缓存页面文件以提高浏览速度——这意味着当您更新kiftd后，浏览器可能并不会及时加载最新版本的页面文件从而导致新功能无法使用。此时，您可以通过手动清理缓存文件的方式来加载最新的页面文件。以Chrome浏览器为例：
+						</p>
+						<h5>1，点击浏览器右上角的菜单按钮：</h5>
+						<img alt="示例1" class="center-block" src="img/tip1_chrome_menu.png" width="400" height="400"/>
+						<h5>2，在菜单中找到“清除浏览数据(C)...”选项：</h5>
+						<img alt="示例2" class="center-block" src="img/tip2_chrome_menu2.png" width="400" height="300"/>
+						<h5>3，在弹出的对话框中，将时间范围设置为“时间不限”，之后勾选“缓存的图片和文件”项目，并点击“清除数据”按钮：</h5>
+						<img alt="示例3" class="center-block" src="img/tip3_chrome_menu3.png" width="400" height="400"/>
+						<h5>4，清理完毕后，请刷新kiftd主页并开始体验新功能。</h5>
+						<p>提示：同理，当您升级kiftd之后，也应告知其他用户手动清理浏览器缓存文件，从而确保新功能可用。不同厂商提供的浏览器可能有所区别，具体清理方式请以官方提供的使用说明为准。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</body>
 	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
