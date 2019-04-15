@@ -168,7 +168,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 				要实现这一功能，其基本原理便是通过java自带的执行系统命令和进程通信功能达到与控制台操作相同的效果（即使用程序操作程序）。
 			</p>
 			<p>
-				这种做法在java程序开发中并不罕见，也是最基础的程序交互手段。即使是java初学者也能很快学会这一技巧。因此本文仅对具体操作提供指导性的示例，不赘述其具体原理。
+				这种做法在java程序开发中并不罕见，也是最基础的程序交互手段，因此本文仅对具体操作提供指导性的示例，不赘述其具体原理。
 			</p>
 			<p>
 				示例：使用java.lang.Runtime工具可得到操作系统的运行环境，并以开启独立进程的方式启动kiftd：
@@ -215,7 +215,7 @@ writer.flush();
 			</pre>
 			<h3 id="t2_3">2.3. 监听kiftd运行状态</h3>
 			<p>
-				监听kiftd的运行状态对于接入kiftd而言也十分重要，你可以通过kiftd进程的Proceess对象获得一个输入流，并转换为一个BufferedReader字符输入流：
+				监听kiftd的运行状态对于接入kiftd而言也十分重要，你可以通过kiftd进程的Proceess对象获得一个输入流，并转换为一个BufferedReader：
 			</p>
 			<code>
 BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
