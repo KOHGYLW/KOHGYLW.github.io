@@ -316,7 +316,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title">请选择下载地址 <small>（159 MB）</small></h4>
+						<h4 class="modal-title">请选择下载地址 <a href="javascript:void(0);" data-toggle="tooltip" data-placement="right" title="提示：您可以选择任意地址进行下载，压缩包体积约为 159 MB。若下载时出现压缩包体积不正确的情况，可以尝试手动清理浏览器的缓存数据后再进行下载，或是换用其他下载地址。">?</a></h4>
 					</div>
 					<div class="modal-body">
 						<div class="list-group">
@@ -326,7 +326,7 @@
 							</a>
 							<a href="https://dev.tencent.com/u/kohgylw/p/kiftd/git/archive/v1.0.22-release.zip" class="list-group-item">
 								<h4 class="list-group-item-heading">2. <span class="glyphicon glyphicon-save"></span> 从 腾讯云 下载...</h4>
-								<p class="list-group-item-text">下载kiftd发行版，“腾讯云”是国内优质的开源项目托管平台，国内访问速度快。可以直接进行下载。</p>
+								<p class="list-group-item-text">下载kiftd发行版，“腾讯云”是国内优质的开源项目托管平台，国内访问速度快。可以直接进行下载若下载。</p>
 							</a>
 							<a href="https://gitee.com/kohgylw/kiftd/repository/archive/v1.0.22-release?format=zip" class="list-group-item" target="view_window">
 								<h4 class="list-group-item-heading">3. <span class="glyphicon glyphicon-save"></span> 从 Gitee 下载...</h4>
@@ -353,6 +353,7 @@
 					scrollTop: ($($(this).attr('href')).offset().top)
 				}, 500);
 			});
+			$('[data-toggle="tooltip"]').tooltip();
 		});
 	</script>
 
