@@ -110,7 +110,7 @@
 			<div class="row featurette">
 				<div class="col-md-7 col-md-push-5">
 					<h4 class="featurette-heading">3.开始使用</h4>
-					<p class="lead">现在，请打开您的 <strong>浏览器</strong> （推荐使用Chrome、FireFox等现代浏览器，如需使用国产高速浏览器，请使用“极速模式”浏览），并在地址栏中输入： <code>http://{您的IP地址（或本机地址127.0.0.1）}:{kiftd端口号}/</code> （例如“http://127.0.0.1:8080/”）来访问您的网盘主页。之后，请使用初始账户admin（密码：000000）登入系统，开始自由体验kiftd的全部功能！
+					<p class="lead">现在，请打开您的 <strong>浏览器</strong> （推荐使用Chrome、Firefox等现代浏览器，如需使用国产高速浏览器，请使用“极速模式”浏览），并在地址栏中输入： <code>http://{您的IP地址（或本机地址127.0.0.1）}:{kiftd端口号}/</code> （例如“http://127.0.0.1:8080/”）来访问您的网盘主页。之后，请使用初始账户admin（密码：000000）登入系统，开始自由体验kiftd的全部功能！
 						<br />
 						<small><a href="javascript:void(0);" data-toggle="modal" data-target="#howToUseModal"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 了解更多……</a></small>
 						<br />
@@ -169,15 +169,15 @@
 					</div>
 					<div class="modal-body">
 						<div class="list-group">
-							<a href="https://github.com/KOHGYLW/kiftd/archive/v1.0.28-release.zip" class="list-group-item">
+							<a href="https://github.com/KOHGYLW/kiftd/archive/v1.0.29-release.zip" class="list-group-item">
 								<h4 class="list-group-item-heading">1. <span class="glyphicon glyphicon-save"></span> 从 GitHub 下载...</h4>
 								<p class="list-group-item-text">下载kiftd发行版，GitHub是知名的开源项目托管平台，可以直接进行下载。</p>
 							</a>
-							<a href="https://code.aliyun.com/kohgylw/kiftd/repository/archive.zip?ref=v1.0.28-release" class="list-group-item">
+							<a href="https://code.aliyun.com/kohgylw/kiftd/repository/archive.zip?ref=v1.0.29-release" class="list-group-item">
 								<h4 class="list-group-item-heading">2. <span class="glyphicon glyphicon-save"></span> 从 阿里云 下载...</h4>
 								<p class="list-group-item-text">下载kiftd发行版，“阿里云”是国内优质的开源项目托管平台，国内访问速度快。可以直接进行下载。</p>
 							</a>
-							<a href="https://gitee.com/kohgylw/kiftd/repository/archive/v1.0.28-release?format=zip" class="list-group-item" target="view_window">
+							<a href="https://gitee.com/kohgylw/kiftd/repository/archive/v1.0.29-release?format=zip" class="list-group-item" target="view_window">
 								<h4 class="list-group-item-heading">3. <span class="glyphicon glyphicon-save"></span> 从 Gitee 下载...</h4>
 								<p class="list-group-item-text">下载kiftd发行版，“码云”是国内知名的开源项目托管平台，国内访问速度快。需登录认证。</p>
 							</a>
@@ -269,19 +269,19 @@
 	<script type="text/javascript" src="js/jqthumb.min.js"></script>
 	<script type="text/javascript" src="js/viewer.min.js"></script>
 	<script type="text/javascript">
-		$(function(){
+		$(function() {
 			$('[data-toggle="tooltip"]').tooltip();
 		})
-		
+
 		function show_step_one() {
 			var image1 = document.createElement('ul');
 			$(image1).append("<li><img src='img/step1_1.png' alt='1：访问JAVA官网首页，并找到下载链接。'></li>");
 			$(image1).append("<li><img src='img/step1_2.png' alt='2：根据系统类型选择合适的安装包并开始下载。'></li>");
-			$(image1).append("<li><img src='img/step1_2_1.png' alt='3：双击安装包并开始安装（名称可能因版本不同有所区别）。'></li>");
-			$(image1).append("<li><img src='img/step1_3.png' alt='4：根据提示内容选择开始安装（具体内容可能因版本不同有所区别）。'></li>");
-			$(image1).append("<li><img src='img/step1_4.png' alt='5：等待安装包下载必须的资源，这可能需要一些时间。'></li>");
-			$(image1).append("<li><img src='img/step1_5.png' alt='6：等待安装包执行安装过程，这可能需要一些时间。'></li>");
-			$(image1).append("<li><img src='img/step1_6.png' alt='7：安装完成后，只需退出安装程序即可，无需进行其他操作。'></li>");
+			$(image1).append("<li><img src='img/step1_3.png' alt='3：双击安装包并开始安装（名称可能因版本不同有所区别）。'></li>");
+			$(image1).append("<li><img src='img/step1_4.png' alt='4：根据提示内容选择开始安装（具体内容可能因版本不同有所区别）。'></li>");
+			$(image1).append("<li><img src='img/step1_5.png' alt='5：等待安装包下载必须的资源，这可能需要一些时间。'></li>");
+			$(image1).append("<li><img src='img/step1_6.png' alt='6：等待安装包执行安装过程，这可能需要一些时间。'></li>");
+			$(image1).append("<li><img src='img/step1_7.png' alt='7：安装完成后，只需退出安装程序即可，无需进行其他操作。'></li>");
 			var viewer1 = new Viewer(image1, {
 				hidden: function() {
 					viewer1.destroy();
@@ -304,7 +304,7 @@
 			});
 			viewer2.show();
 		}
-		
+
 		function show_step_three() {
 			var image3 = document.createElement('ul');
 			$(image3).append("<li><img src='img/step3_1.png' alt='1：打开浏览器，并在地址栏中输入“http://{您的IP地址}:{kiftd端口号}/”。'></li>");
