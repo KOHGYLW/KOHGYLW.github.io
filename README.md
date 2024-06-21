@@ -5,6 +5,6 @@
 
 #### 说明
 
-该项目为 [kiftd](https://gitee.com/kohgylw/kiftd) 项目的官方主页，使用Gitee提供的“Gitee Pages”服务部署，您可以通过访问 [kiftd官方网站](https://kohgylw.gitee.io/) 来查看此项目的页面内容。
+该项目为 [kiftd](https://gitee.com/kohgylw/kiftd) 项目的官方主页，使用Gitee提供的“Gitee Pages”服务部署，您可以通过访问 [kiftd官方网站](https://kohgylw.github.io/) 来查看此项目的页面内容。
 
- _by kohgylw 青阳龙野_ 
+ _by kohgylw 青阳龙野_

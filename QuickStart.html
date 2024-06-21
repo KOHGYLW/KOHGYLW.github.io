@@ -18,12 +18,12 @@
 		<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
 		<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
 		<!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
-      <script>
-      	alert("提示：浏览器版本过低。请使用一款现代浏览器访问（例如Chrome或FireFox等），如使用国产高速浏览器，请切换为“极速模式”。");
-      </script>
-    <![endif]-->
+		  <script src="js/html5shiv.min.js"></script>
+		  <script src="js/respond.min.js"></script>
+		  <script>
+			alert("提示：浏览器版本过低。请使用一款现代浏览器访问（例如Chrome或FireFox等），如使用国产高速浏览器，请切换为“极速模式”。");
+		  </script>
+		<![endif]-->
 	</head>
 
 	<body>
@@ -167,19 +167,15 @@
 				</div>
 			</div>
 
-			<!-- /END THE FEATURETTES -->
-
-			<!-- FOOTER -->
 			<footer>
 				<p class="pull-right">
 					<a href="#">返回顶部</a>
 					<a href="index.html">返回首页</a>
 				</p>
-				<p>&copy; 2018-2023 kohgylw@163.com, 青阳龙野 版权所有。
+				<p>&copy; 2018-2024 kohgylw@163.com, 青阳龙野 版权所有。
 				</p>
 
 		</div>
-		<!-- /.container -->
 
 		<!-- Modal -->
 		<!--下载模态框-->
@@ -196,19 +192,19 @@
 					</div>
 					<div class="modal-body">
 						<div class="list-group">
-							<a href="https://github.com/KOHGYLW/kiftd/archive/refs/tags/v1.1.1-release.zip"
+							<a href="https://github.com/KOHGYLW/kiftd/archive/refs/tags/v1.2.0-release.zip"
 								class="list-group-item">
 								<h4 class="list-group-item-heading">1. <span class="glyphicon glyphicon-save"></span> 从
 									GitHub 下载...</h4>
 								<p class="list-group-item-text">下载kiftd发行版，GitHub是知名的开源项目托管平台，可以直接进行下载。</p>
 							</a>
-							<a href="https://gitcode.net/qq_25670227/kiftd/-/archive/v1.1.1-release/kiftd-v1.1.1-release.zip"
+							<a href="https://gitcode.net/qq_25670227/kiftd/-/archive/v1.2.0-release/kiftd-v1.2.0-release.zip"
 								class="list-group-item">
 								<h4 class="list-group-item-heading">2. <span class="glyphicon glyphicon-save"></span> 从
 									GitCode 下载...</h4>
 								<p class="list-group-item-text">下载kiftd发行版，GitCode是国内优质的开源项目托管平台，国内访问速度快。可以直接进行下载。</p>
 							</a>
-							<a href="https://gitee.com/kohgylw/kiftd/archive/refs/tags/v1.1.1-release.zip"
+							<a href="https://gitee.com/kohgylw/kiftd/archive/refs/tags/v1.2.0-release.zip"
 								class="list-group-item" target="view_window">
 								<h4 class="list-group-item-heading">3. <span class="glyphicon glyphicon-save"></span> 从
 									Gitee 下载...</h4>
@@ -337,7 +333,7 @@
 			$(image2).append("<li><img src='img/step2_1.png' alt='1：下载最新版本的kiftd。'></li>");
 			$(image2).append("<li><img src='img/step2_2.png' alt='2：将下载好的kiftd压缩包解压至本地。'></li>");
 			$(image2).append(
-			"<li><img src='img/step2_3.png' alt='3：进入解压目录（即程序主目录）并双击其中的jar程序（文件名可能因版本不同有所区别）启动kiftd。'></li>");
+				"<li><img src='img/step2_3.png' alt='3：进入解压目录（即程序主目录）并双击其中的jar程序（文件名可能因版本不同有所区别）启动kiftd。'></li>");
 			$(image2).append("<li><img src='img/step2_4.png' alt='4：点击主界面上的启动按钮开启服务器。'></li>");
 			$(image2).append("<li><img src='img/step2_5.png' alt='5：当服务器状态显示为“运行”时，便可以开始使用了。'></li>");
 			var viewer2 = new Viewer(image2, {
@@ -357,7 +353,7 @@
 			$(image3).append("<li><img src='img/step3_5.png' alt='5：例如，尝试上传您的第一个文件并让他人访问下载？'></li>");
 			$(image3).append(
 				"<li><img src='img/step3_6.png' alt='6：至此，您已经完成了kiftd的全部安装步骤。接下来，您可以继续阅读随程序附带的《kiftd说明文档》学会kiftd的所有使用技巧。'></li>"
-				);
+			);
 			var viewer3 = new Viewer(image3, {
 				hidden: function() {
 					viewer3.destroy();
